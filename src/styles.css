@@ -1,0 +1,73 @@
+body {
+  font-family: 'Circular Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #E5E5E5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+}
+
+.card-item {
+  background: #FFFFFF;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-item h2 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #444E5D;
+}
+
+.card-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #798291;
+}
+
+.card-form div {
+  margin-bottom: 16px;
+}
+
+.card-form label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #444E5D;
+}
+
+.card-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #D3D8E1;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.card-form span {
+  color: #FC484C;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+button {
+  background-color: #4C00C2;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}

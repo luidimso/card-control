@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import CardList from './components/CardList';
+import CardForm from './components/CardForm';
 
-function App() {
+const App = () => {
+  const [cards, setCards] = useState([]);
+  const [currentCard, setCurrentCard] = useState(null);
+
+  const addCard = (card) => setCards([...cards, card]);
+  const editCard = (updatedCard) => setCards(cards.map(card => card.id === updatedCard.id ? updatedCard : card));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Your Cards</h1>
+      <CardList cards={cards} setCurrentCard={setCurrentCard} />
+      <button onClick={() => setCurrentCard({})}>Add new card</button>
+      {currentCard && <CardForm card={currentCard} addCard={addCard} editCard={editCard} setCurrentCard={setCurrentCard} />}
     </div>
   );
-}
+};
 
 export default App;
