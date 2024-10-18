@@ -5,6 +5,26 @@ body {
   background-color: #E5E5E5;
 }
 
+.title {
+  margin-bottom: 5px;
+  color: #4c00c2
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 16px;
+  color: #798291;
+}
+
+.btn-add {
+  width: calc(100% - 32px);
+  height: 50px;
+  font-weight: 600;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 75px;
+}
+
 .container {
   max-width: 600px;
   margin: 0 auto;
