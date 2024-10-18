@@ -1,8 +1,17 @@
+@font-face {
+  font-family: 'Circular Pro';
+  src: url('../public/lineto-circular-pro-book.woff') format('woff'),
+       url('../public/lineto-circular-pro-book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Circular Pro', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #E5E5E5;
+  padding-bottom: 100px;
 }
 
 .title {
@@ -14,6 +23,7 @@ body {
   margin: 0;
   font-size: 16px;
   color: #798291;
+  margin-bottom: 50px;
 }
 
 .btn-add {
@@ -22,7 +32,7 @@ body {
   font-weight: 600;
   border-radius: 100px;
   position: fixed;
-  bottom: 75px;
+  bottom: 30px;
 }
 
 .container {
@@ -37,23 +47,69 @@ body {
 }
 
 .card-item {
-  background: #FFFFFF;
+  background-color: #3b058e;
   border-radius: 16px;
   margin-bottom: 16px;
-  padding: 16px;
+  padding: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 150px;
+  background-image: url("../public/card-background-shape.svg");
+  background-size: cover;
+  position: relative;
 }
 
-.card-item h2 {
-  margin: 0 0 8px 0;
-  font-size: 16px;
-  color: #444E5D;
+.card-header {
+  display: flex;
+  justify-content: space-between;
 }
 
-.card-item p {
+.card-infos {
+  display: flex;
+  justify-content: space-between;
+  color: white !important;
+}
+
+.card-info {
+  margin-left: 20px;
+  text-align: right;
+}
+
+.card-label {
+  font-size: 10px;
+}
+
+.card-value {
+  font-weight: 600;
   margin: 0;
-  font-size: 14px;
-  color: #798291;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  width: calc(100% - 60px);
+}
+
+.card-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.card-number {
+  font-size: 24px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.card-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon {
+  margin-top: 18px;
 }
 
 .card-form {
