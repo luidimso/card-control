@@ -88,6 +88,7 @@ const CardForm = ({ card, addCard, editCard, setCurrentCard }) => {
           {errors.cvc && <span>{errors.cvc}</span>}
         </div>
         <button className='btn-add' type="submit">Confirm</button>
+        <br></br><br></br><br></br><br></br><br></br><br></br>
       </div>
     </form>
   );
